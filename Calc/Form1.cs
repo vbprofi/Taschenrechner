@@ -247,9 +247,10 @@ namespace Calc
 
             if(e.KeyCode == Keys.D0 && (e.Shift))
                 btnEQUAL_Click(sender as Button, e);
-        }
 
-        
-        
+            if (e.KeyCode == Keys.F1)
+                MessageBox.Show(this.Text + " v" + this.ProductVersion + "\n\n(c)2020, Egid", "Info über" + Application.ProductName);
+        }
+      
             }//end class
 }//end namespace
