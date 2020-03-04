@@ -48,8 +48,8 @@
             this.btnPER = new System.Windows.Forms.Button();
             this.btnsqrt = new System.Windows.Forms.Button();
             this.btnPOW = new System.Windows.Forms.Button();
-            this.txtDisplay = new Calc.AllowedCharsTextBox();
             this.btnQW = new System.Windows.Forms.Button();
+            this.txtDisplay = new Calc.AllowedCharsTextBox();
             this.SuspendLayout();
             // 
             // btnN1
@@ -271,6 +271,16 @@
             this.btnPOW.UseVisualStyleBackColor = true;
             this.btnPOW.Click += new System.EventHandler(this.btnPOW_Click);
             // 
+            // btnQW
+            // 
+            this.btnQW.Location = new System.Drawing.Point(56, 56);
+            this.btnQW.Name = "btnQW";
+            this.btnQW.Size = new System.Drawing.Size(75, 23);
+            this.btnQW.TabIndex = 20;
+            this.btnQW.Text = "Quadratwurzel";
+            this.btnQW.UseVisualStyleBackColor = true;
+            this.btnQW.Click += new System.EventHandler(this.btnQW_Click);
+            // 
             // txtDisplay
             // 
             this.txtDisplay.AccessibleDescription = "Ergebnis";
@@ -283,16 +293,6 @@
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // btnQW
-            // 
-            this.btnQW.Location = new System.Drawing.Point(56, 56);
-            this.btnQW.Name = "btnQW";
-            this.btnQW.Size = new System.Drawing.Size(75, 23);
-            this.btnQW.TabIndex = 20;
-            this.btnQW.Text = "Quadratwurzel";
-            this.btnQW.UseVisualStyleBackColor = true;
-            this.btnQW.Click += new System.EventHandler(this.btnQW_Click);
             // 
             // Form1
             // 
