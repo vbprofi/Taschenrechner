@@ -229,11 +229,17 @@ namespace Calc
 
             if (Operation == "%")
             {
-                Result = (FirstNumber * (SecondNumber/100));
+                Result = (SecondNumber / 100) * FirstNumber;
                 txtDisplay.Text = String.Format("{0:0,0.0}", Result);
                 FirstNumber = Result;
             }
-                
+            if (Operation == "POW")
+            {
+                Result = Math.Pow(FirstNumber, SecondNumber);
+                txtDisplay.Text = String.Format("{0:0,0.0}", Result);
+                FirstNumber = Result;
+            }
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -265,6 +271,33 @@ namespace Calc
             Operation = "%";
             txtDisplay.Text = "0";
         }
+
+        private void btnsqrt_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(txtDisplay.Text);
+            Result = Math.Sqrt(FirstNumber);
+            Operation = "Sqrt";
+            txtDisplay.Text = String.Format("{0:0,0.0}", Result);
+            FirstNumber = Result;
+        }
+
+        private void btnPOW_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(txtDisplay.Text);
+            Operation = "POW";
+            txtDisplay.Text = "0";
+        }
+
+        private void btnQW_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(txtDisplay.Text);
+            Result = Math.Sqrt(Math.Sqrt(FirstNumber));
+            Operation = "QW";
+            txtDisplay.Text = String.Format("{0:0,0.0}", Result);
+            FirstNumber = Result;
+        }
+
+        
 
     }//end class
 }//end namespace

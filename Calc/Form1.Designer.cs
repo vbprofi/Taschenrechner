@@ -45,8 +45,11 @@
             this.btnBC = new System.Windows.Forms.Button();
             this.btnDOT = new System.Windows.Forms.Button();
             this.btnEQUAL = new System.Windows.Forms.Button();
-            this.txtDisplay = new Calc.AllowedCharsTextBox();
             this.btnPER = new System.Windows.Forms.Button();
+            this.btnsqrt = new System.Windows.Forms.Button();
+            this.btnPOW = new System.Windows.Forms.Button();
+            this.txtDisplay = new Calc.AllowedCharsTextBox();
+            this.btnQW = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnN1
@@ -233,10 +236,40 @@
             this.btnEQUAL.Location = new System.Drawing.Point(48, 48);
             this.btnEQUAL.Name = "btnEQUAL";
             this.btnEQUAL.Size = new System.Drawing.Size(75, 23);
-            this.btnEQUAL.TabIndex = 18;
+            this.btnEQUAL.TabIndex = 25;
             this.btnEQUAL.Text = "=";
             this.btnEQUAL.UseVisualStyleBackColor = true;
             this.btnEQUAL.Click += new System.EventHandler(this.btnEQUAL_Click);
+            // 
+            // btnPER
+            // 
+            this.btnPER.Location = new System.Drawing.Point(56, 56);
+            this.btnPER.Name = "btnPER";
+            this.btnPER.Size = new System.Drawing.Size(75, 23);
+            this.btnPER.TabIndex = 17;
+            this.btnPER.Text = "%";
+            this.btnPER.UseVisualStyleBackColor = true;
+            this.btnPER.Click += new System.EventHandler(this.btnPER_Click);
+            // 
+            // btnsqrt
+            // 
+            this.btnsqrt.Location = new System.Drawing.Point(56, 56);
+            this.btnsqrt.Name = "btnsqrt";
+            this.btnsqrt.Size = new System.Drawing.Size(75, 23);
+            this.btnsqrt.TabIndex = 18;
+            this.btnsqrt.Text = "Wurzel";
+            this.btnsqrt.UseVisualStyleBackColor = true;
+            this.btnsqrt.Click += new System.EventHandler(this.btnsqrt_Click);
+            // 
+            // btnPOW
+            // 
+            this.btnPOW.Location = new System.Drawing.Point(56, 56);
+            this.btnPOW.Name = "btnPOW";
+            this.btnPOW.Size = new System.Drawing.Size(75, 23);
+            this.btnPOW.TabIndex = 19;
+            this.btnPOW.Text = "Quadrat";
+            this.btnPOW.UseVisualStyleBackColor = true;
+            this.btnPOW.Click += new System.EventHandler(this.btnPOW_Click);
             // 
             // txtDisplay
             // 
@@ -251,21 +284,24 @@
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btnPER
+            // btnQW
             // 
-            this.btnPER.Location = new System.Drawing.Point(56, 56);
-            this.btnPER.Name = "btnPER";
-            this.btnPER.Size = new System.Drawing.Size(75, 23);
-            this.btnPER.TabIndex = 17;
-            this.btnPER.Text = "%";
-            this.btnPER.UseVisualStyleBackColor = true;
-            this.btnPER.Click += new System.EventHandler(this.btnPER_Click);
+            this.btnQW.Location = new System.Drawing.Point(56, 56);
+            this.btnQW.Name = "btnQW";
+            this.btnQW.Size = new System.Drawing.Size(75, 23);
+            this.btnQW.TabIndex = 20;
+            this.btnQW.Text = "Quadratwurzel";
+            this.btnQW.UseVisualStyleBackColor = true;
+            this.btnQW.Click += new System.EventHandler(this.btnQW_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnQW);
+            this.Controls.Add(this.btnPOW);
+            this.Controls.Add(this.btnsqrt);
             this.Controls.Add(this.btnPER);
             this.Controls.Add(this.btnEQUAL);
             this.Controls.Add(this.btnDOT);
@@ -318,6 +354,9 @@
         //private System.Windows.Forms.TextBox txtDisplay;
         private AllowedCharsTextBox txtDisplay;
         private System.Windows.Forms.Button btnPER;
+        private System.Windows.Forms.Button btnsqrt;
+        private System.Windows.Forms.Button btnPOW;
+        private System.Windows.Forms.Button btnQW;
     }
 }
 
