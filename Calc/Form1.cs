@@ -231,21 +231,6 @@ namespace Calc
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show("text");
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            MessageBox.Show("x");
-        }
-
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            MessageBox.Show("b");
-        }
-
-        private void txtDisplay_KeyDown(object sender, KeyEventArgs e)
-        {
             if (e.KeyCode == Keys.Oemplus)
                 btnADD_Click(sender as Button, e);
             if (e.KeyCode == Keys.OemMinus)
@@ -259,6 +244,12 @@ namespace Calc
                 btnDIV_Click(sender as Button, e);
             if (e.KeyCode == Keys.Return)
                 btnEQUAL_Click(sender as Button, e);
+
+            if(e.KeyCode == Keys.D0 && (e.Shift))
+                btnEQUAL_Click(sender as Button, e);
         }
-    }//end class
+
+        
+        
+            }//end class
 }//end namespace

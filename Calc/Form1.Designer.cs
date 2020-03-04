@@ -249,7 +249,7 @@
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtDisplay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDisplay_KeyDown);
+            
             // 
             // Form1
             // 
@@ -274,13 +274,14 @@
             this.Controls.Add(this.btnN2);
             this.Controls.Add(this.btnN1);
             this.Controls.Add(this.txtDisplay);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Taschenrechner";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
