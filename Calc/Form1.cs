@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Calc
 {
@@ -190,21 +191,24 @@ namespace Calc
             if (Operation == "+")
             {
                 Result = (FirstNumber + SecondNumber);
-                txtDisplay.Text = Convert.ToString(Result);
+                //txtDisplay.Text = Convert.ToString(Result);
+                txtDisplay.Text = String.Format("{0:0,0.0}", Result);
                 FirstNumber = Result;
             }
 
             if (Operation == "-")
             {
                 Result = (FirstNumber - SecondNumber);
-                txtDisplay.Text = Convert.ToString(Result);
+                //txtDisplay.Text = Convert.ToString(Result);
+                txtDisplay.Text = String.Format("{0:0,0.0}", Result);
                 FirstNumber = Result;
             }
 
             if (Operation == "*")
             {
                 Result = (FirstNumber * SecondNumber);
-                txtDisplay.Text = Convert.ToString(Result);
+                //txtDisplay.Text = Convert.ToString(Result);
+                txtDisplay.Text = String.Format("{0:0,0.0}", Result);
                 FirstNumber = Result;
             }
 
@@ -217,12 +221,12 @@ namespace Calc
                 else
                 {
                     Result = (FirstNumber / SecondNumber);
-                    txtDisplay.Text = Convert.ToString(Result);
+                    //txtDisplay.Text = Convert.ToString(Result);
+                    txtDisplay.Text = String.Format("{0:0,0.0}", Result);
                     FirstNumber = Result;
                 }
             }
-
-
+            
         }
 
     }//end class

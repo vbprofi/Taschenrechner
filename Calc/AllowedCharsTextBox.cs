@@ -12,7 +12,7 @@ namespace Calc
     public class AllowedCharsTextBox : TextBox
     {
         //----------------------------------------------------------
-        private String _allowedChars = "-+*/=0123456789,";
+        private String _allowedChars = "-.0123456789,";
         // Um von einer bestimmten Kultur unabhängig zu sein, kann man statt "-" und "," besser
         // System.Globalization.NumberFormatInfo.CurrentInfo.NegativeSign und
         // System.Globalization.NumberFormatInfo.CurrentInfo.NumberDecimalSeparator
