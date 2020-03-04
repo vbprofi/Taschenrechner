@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.txtDisplay = new Calc.AllowedCharsTextBox();
             this.btnN1 = new System.Windows.Forms.Button();
             this.btnN2 = new System.Windows.Forms.Button();
             this.btnN3 = new System.Windows.Forms.Button();
@@ -52,10 +52,10 @@
             // 
             this.txtDisplay.AccessibleDescription = "Ergebnis";
             this.txtDisplay.AccessibleName = "Ergebnis";
+            this.txtDisplay.AllowedChars = "-0123456789,";
             this.txtDisplay.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay.Location = new System.Drawing.Point(0, 0);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.ReadOnly = true;
             this.txtDisplay.Size = new System.Drawing.Size(100, 26);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
@@ -283,8 +283,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDisplay;
         private System.Windows.Forms.Button btnN1;
         private System.Windows.Forms.Button btnN2;
         private System.Windows.Forms.Button btnN3;
@@ -302,6 +300,7 @@
         private System.Windows.Forms.Button btnBC;
         private System.Windows.Forms.Button btnDOT;
         private System.Windows.Forms.Button btnEQUAL;
+        private AllowedCharsTextBox txtDisplay;
     }
 }
 
