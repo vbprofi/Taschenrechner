@@ -226,7 +226,14 @@ namespace Calc
                     FirstNumber = Result;
                 }
             }
-            
+
+            if (Operation == "%")
+            {
+                Result = (FirstNumber * (SecondNumber/100));
+                txtDisplay.Text = String.Format("{0:0,0.0}", Result);
+                FirstNumber = Result;
+            }
+                
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -251,6 +258,13 @@ namespace Calc
             if (e.KeyCode == Keys.F1)
                 MessageBox.Show(this.Text + " v" + this.ProductVersion + "\n\n(c)2020, Egid", "Info über" + Application.ProductName);
         }
-      
-            }//end class
+
+        private void btnPER_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(txtDisplay.Text);
+            Operation = "%";
+            txtDisplay.Text = "0";
+        }
+
+    }//end class
 }//end namespace
