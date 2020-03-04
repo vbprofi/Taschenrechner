@@ -30,11 +30,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN1.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN1.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN1.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN1.Text;
             }
         }
 
@@ -42,11 +42,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN2.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN2.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN2.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN2.Text;
             }
         }
 
@@ -54,11 +54,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN3.Text;
+                txtDisplay.Text = (sender as Button).Text;  //btnN3.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN3.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN3.Text;
             }
         }
 
@@ -66,11 +66,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN4.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN4.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN4.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN4.Text;
             }
         }
 
@@ -78,11 +78,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN5.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN5.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN5.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN5.Text;
             }
         }
 
@@ -90,11 +90,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN6.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN6.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN6.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN6.Text;
             }
         }
 
@@ -102,11 +102,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN7.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN7.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN7.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN7.Text;
             }
         }
 
@@ -114,11 +114,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN8.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN8.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN8.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN8.Text;
             }
         }
 
@@ -126,11 +126,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN9.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN9.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN9.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN9.Text;
             }
         }
 
@@ -138,11 +138,11 @@ namespace Calc
         {
             if (txtDisplay.Text == "0" && txtDisplay.Text != null)
             {
-                txtDisplay.Text = btnN0.Text;
+                txtDisplay.Text = (sender as Button).Text; //btnN0.Text;
             }
             else
             {
-                txtDisplay.Text = txtDisplay.Text + btnN0.Text;
+                txtDisplay.Text = txtDisplay.Text + (sender as Button).Text; //btnN0.Text;
             }
         }
 
